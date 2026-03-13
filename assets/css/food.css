@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+background:#f7dfa6;
+margin:0;
+
+}
+
+
+header{
+background:rgba(152, 22, 22, 0.752);
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+#restaurants ul {
+    list-style: none;
+    padding: 0;
+}
+
+#restaurants li {
+    border: 1px solid #ddd;
+    margin: 1em;
+    padding: 1em;
+}
+
+button {
+    background:#712010;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+.container{
+  background-color:whitesmoke ;
+  margin: 30px auto;
+    padding: 20px;
+      border: 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 70%;
+}

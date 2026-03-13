@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RequestDelivery</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/header-footer.css">
+<link rel="icon" type="logo.jpg" sizes="32x32" href="/assets/images/logo.png">
+</head>
+
+<body>
+
+<header>
+<h1>RequestDelivery</h1>
+<p>Fast & Safe Delivery Service</p>
+</header>
+
+<div class="container">
+
+<h2>Request Delivery</h2>
+<label for="Restaurant name">Restaurant Name</label>
+<input type="text" id="restaurant" placeholder="Enter restaurant name"><br><br>
+
+<label>Pickup Location</label>
+<input type="text" id="pickup" placeholder="Enter pickup location"><br><br>
+
+<label>Delivery Location</label>
+<input type="text" id="dropoff" placeholder="Enter delivery location"><br><br>
+
+<label>Package Type</label>
+<select id="package">
+<option>Food</option>
+<option>Beverages</option>
+<option>Food and Beverages</option>
+</select><br>
+
+<button onclick="createOrder()">Request Delivery</button>
+
+<div id="status" class="order-status"></div>
+
+</div>
+
+<script>
+
+function createOrder(){
+
+let pickup = document.getElementById("pickup").value;
+let dropoff = document.getElementById("dropoff").value;
+let packageType = document.getElementById("package").value;
+
+if(pickup === "" || dropoff === ""){
+alert("Please enter pickup and delivery locations");
+return;
+}
+
+let orderID = Math.floor(Math.random()*100000);
+
+document.getElementById("status").innerHTML =
+"<b>Order Created!</b><br>" +
+"Order ID: " + orderID + "<br>" +
+"Package: " + packageType + "<br>" +
+"Pickup: " + pickup + "<br>" +
+"Delivery: " + dropoff + "<br><br>" +
+"Status: Driver Assigned 🚚";
+
+}
+
+</script>
+<footer class="site-footer">
+  <div class="footer-container">
+    
+      <h3>About Us</h3>
+      <p>We build beautiful, responsive web experiences to help businesses grow and succeed online.</p>
+      <h3>Quick Links</h3>
+    
+        <a href="#">Home</a>
+        <a href="#">Our Services</a>
+        <a href="#">Contact Us</a>
+      
+      <h3>Follow Us</h3>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+    
+
+  
+    <p>&copy; 2026 SwiftDrop. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
