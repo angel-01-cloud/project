@@ -116,8 +116,40 @@ input{
 /* #Content */
 /* ========BUTTON========= */
 
-
+.content .content-left button{
+    padding: 10px 23px;
+    background-color: #ff511c;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
 
 /* #Content Image*/
 /* ==========RIGHT-SIDE========= */
 
+.content .content-right{
+    display: block;
+    width: 100%;
+}
+
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    user-select: none;
+    animation: rotate 10s linear infinite;
+}
+
+
+/* #Content */
+/* =========ANIMATION========== */
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+     }
+     100%{
+        transform: rotate(360deg);
+     }
+}
