@@ -2,26 +2,45 @@
 <html>
 <head>
 <title>Driver Panel</title>
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/header-footer.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/header-footer.css">
+    
     <link rel="icon" type="logo.jpg" sizes="32x32" href="/assets/images/logo.png">
 </head>
 
 <body>
-    <header>
+ 
+        <header>
         <nav>
-            <h1>Driver Dashboard</h1>   
-        </nav>
+    
+        <div class="nav">
+            <div class="logo"><h1>SWIFT<b>DROP</b></h1></div>
+            <ul>
+                <li><a class="ACTIVE" href="/index.html">Home</a></li>
+                <li><a href="restaurants-menu.html">Menu</a></li>
+                <li><a href="restaurant.html">Services</a></li>
+                <li><a href="pages/about.html">About us</a></li>
+                <li><a href="delivery.html">RequestDelivery</a></li>
+            </ul>
+            <div>
+              <ul class="link">
+             <li> <a href="login.html">sign-in</a></li>
+              <li><a href="register.html">register</a></li>
+                </ul>
+            </div>
+             </div>
+
+    </nav>
     </header>
-<div>
-    <h3>Driver details</h3>
-    <ul></ul>
+ <div class="container">
+<div >
+  <h1>Driver Info</h1>
+  <ul>
+    <li>Driver Name: Adam Smith</li>
+    <li>vehicule id: 12v625</li>
+  </ul>
 </div>
 
-
-
-<button onclick="loadOrders()"></button>
 
 <ul id="orders"></ul>
 
@@ -68,6 +87,7 @@ map: map
 
 }
 </script>
+<h1>Track Delivery</h1><br>
 <iframe 
   src="https://www.google.com/maps/embed?pb=!1m18..." 
   width="600" 
@@ -76,6 +96,8 @@ map: map
   allowfullscreen="" 
   loading="lazy">
 </iframe>
+</div>
+
 <footer class="site-footer">
   <div class="footer-container">
     

@@ -11,21 +11,39 @@
 <body>
 
 <header>
-<h1>RequestDelivery</h1>
-<p>Fast & Safe Delivery Service</p>
-</header>
+        <nav>
+    
+        <div class="nav">
+            <div class="logo"><h1>SWIFT<b>DROP</b></h1></div>
+            <ul>
+                <li><a class="ACTIVE" href="/index.html">Home</a></li>
+                <li><a href="restaurants-menu.html">Menu</a></li>
+                <li><a href="restaurant.html">Services</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="delivery.html">RequestDelivery</a></li>
+            </ul>
+            <div>
+              <ul class="link">
+             <li> <a href="login.html">sign-in</a></li>
+              <li><a href="register.html">register</a></li>
+                </ul>
+            </div>
+             </div>
+
+    </nav>
+    </header>
 
 <div class="container">
 
-<h2>Request Delivery</h2>
+<h1>Request Delivery</h1>
 <label for="Restaurant name">Restaurant Name</label>
-<input type="text" id="restaurant" placeholder="Enter restaurant name"><br><br>
+<input class="input" type="text" id="restaurant" placeholder="Enter restaurant name"><br><br>
 
 <label>Pickup Location</label>
-<input type="text" id="pickup" placeholder="Enter pickup location"><br><br>
+<input class="input" type="text" id="pickup" placeholder="Enter pickup location"><br><br>
 
 <label>Delivery Location</label>
-<input type="text" id="dropoff" placeholder="Enter delivery location"><br><br>
+<input class="input" type="text" id="dropoff" placeholder="Enter delivery location"><br><br>
 
 <label>Package Type</label>
 <select id="package">
@@ -34,7 +52,8 @@
 <option>Food and Beverages</option>
 </select><br>
 
-<button onclick="createOrder()">Request Delivery</button>
+<button onclick="createOrder()">Request Delivery</button><br><br>
+<a href="driver.html">Go to driver-dashboard and track delivery</a>
 
 <div id="status" class="order-status"></div>
 
@@ -66,6 +85,7 @@ document.getElementById("status").innerHTML =
 }
 
 </script>
+
 <footer class="site-footer">
   <div class="footer-container">
     
