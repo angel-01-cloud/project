@@ -1,0 +1,80 @@
+.popular-dishes {
+    margin-top: 100px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.carousel-controls button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: var(--text-light);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.carousel-controls .active {
+    background-color: var(--primary-orange);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.dish-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.dish-card:hover {
+    transform: translateY(-10px);
+}
+
+.dish-card .rating {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dish-card .rating i {
+    color: gold;
+}
+
+.dish-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.dish-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.dish-card .price {
+    color: var(--primary-orange);
+    font-weight: 700;
+    font-size: 18px;
+}
