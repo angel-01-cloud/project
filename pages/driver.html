@@ -2,26 +2,45 @@
 <html>
 <head>
 <title>Driver Panel</title>
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/header-footer.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/header-footer.css">
+<link rel="stylesheet" href="/trial.css">
+    
     <link rel="icon" type="logo.jpg" sizes="32x32" href="/assets/images/logo.png">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>Driver Dashboard</h1>   
+ 
+      <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-utensils" style="color: #f28b2a;"></i>
+            <span>SWIFTDROP DELIVERY</span>
+        </div>
+        <nav class="nav-links">
+            <a href="/trial.html" class="active">Home</a>
+            <a href="restaurants-menu.html">Menu</a>
+            <a href="restaurant.html">Restaurants</a>
+            <a href="about.html">about us</a>
+            <a href="delivery.html">RequestDelivery</a>
+            
         </nav>
+        <div class="nav-actions">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <a href="/pages/register.html" class="btn-login">Register</a>
+             <a href="/pages/login.html" class="btn-login">Log in</a>
+        </div>
     </header>
-<div>
-    <h3>Driver details</h3>
-    <ul></ul>
+ <div class="container">
+<div >
+  <h1>Driver Info</h1>
+  <ul>
+    <li>Driver Name: Adam Smith</li>
+    <li>vehicule id: 12v625</li>
+  </ul>
 </div>
 
-
-
-<button onclick="loadOrders()"></button>
 
 <ul id="orders"></ul>
 
@@ -68,6 +87,7 @@ map: map
 
 }
 </script>
+<h1>Track Delivery</h1><br>
 <iframe 
   src="https://www.google.com/maps/embed?pb=!1m18..." 
   width="600" 
@@ -76,11 +96,10 @@ map: map
   allowfullscreen="" 
   loading="lazy">
 </iframe>
+</div>
+
 <footer class="site-footer">
   <div class="footer-container">
-    
-      <h3>About Us</h3>
-      <p>We build beautiful, responsive web experiences to help businesses grow and succeed online.</p>
       <h3>Quick Links</h3>
     
         <a href="#">Home</a>

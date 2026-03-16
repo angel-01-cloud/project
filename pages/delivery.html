@@ -6,26 +6,45 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/header-footer.css">
 <link rel="icon" type="logo.jpg" sizes="32x32" href="/assets/images/logo.png">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/trial.css">
 </head>
 
 <body>
 
-<header>
-<h1>RequestDelivery</h1>
-<p>Fast & Safe Delivery Service</p>
-</header>
-
+ <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-utensils" style="color: #f28b2a;"></i>
+            <span>SWIFTDROP DELIVERY</span>
+        </div>
+        <nav class="nav-links">
+            <a href="/trial.html" class="active">Home</a>
+            <a href="restaurants-menu.html">Menu</a>
+            <a href="restaurant.html">Restaurants</a>
+            <a href="about.html">about us</a>
+            <a href="delivery.html">RequestDelivery</a>
+            
+        </nav>
+        <div class="nav-actions">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <a href="/pages/register.html" class="btn-login">Register</a>
+             <a href="/pages/login.html" class="btn-login">Log in</a>
+        </div>
+    </header>
 <div class="container">
 
-<h2>Request Delivery</h2>
+<h1>Request Delivery</h1>
 <label for="Restaurant name">Restaurant Name</label>
-<input type="text" id="restaurant" placeholder="Enter restaurant name"><br><br>
+<input class="input" type="text" id="restaurant" placeholder="Enter restaurant name"><br><br>
 
 <label>Pickup Location</label>
-<input type="text" id="pickup" placeholder="Enter pickup location"><br><br>
+<input class="input" type="text" id="pickup" placeholder="Enter pickup location"><br><br>
 
 <label>Delivery Location</label>
-<input type="text" id="dropoff" placeholder="Enter delivery location"><br><br>
+<input class="input" type="text" id="dropoff" placeholder="Enter delivery location"><br><br>
 
 <label>Package Type</label>
 <select id="package">
@@ -34,7 +53,8 @@
 <option>Food and Beverages</option>
 </select><br>
 
-<button onclick="createOrder()">Request Delivery</button>
+<button onclick="createOrder()">Request Delivery</button><br><br>
+<a href="driver.html">Go to driver-dashboard and track delivery</a>
 
 <div id="status" class="order-status"></div>
 
@@ -66,11 +86,9 @@ document.getElementById("status").innerHTML =
 }
 
 </script>
+
 <footer class="site-footer">
   <div class="footer-container">
-    
-      <h3>About Us</h3>
-      <p>We build beautiful, responsive web experiences to help businesses grow and succeed online.</p>
       <h3>Quick Links</h3>
     
         <a href="#">Home</a>
