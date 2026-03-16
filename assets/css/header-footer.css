@@ -1,15 +1,62 @@
-header{
-background:rgba(152, 22, 22, 0.752);
-color:rgb(0, 0, 0);
-padding:15px;
-font-family: Georgia;
-text-align: left;
 
-}
 
 footer{
-background:rgba(152, 22, 22, 0.752);
+background:#f5f4f2;
 color:black;
 padding:15px;
 text-align: center;
+border: none;
+border-radius: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-orange);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links .active {
+    font-weight: 700;
+    position: relative;
+}
+
+.nav-links .active::after {
+    content: '.';
+    color: var(--primary-orange);
+    position: absolute;
+    bottom: -15px;
+    left: 45%;
+    font-size: 20px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.btn-login {
+    background-color: var(--primary-orange);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
 }
