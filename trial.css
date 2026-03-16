@@ -4,7 +4,7 @@
     --text-dark: #1a1a1a;
     --text-light: #7a7a7a;
     --bg-color: #fffcf5; /* Light cream background */
-    --card-bg: #ffffff;
+    --card-bg: white;
 }
 
 * {
