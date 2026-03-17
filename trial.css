@@ -14,15 +14,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-dark);
-    padding: 20px 5%; /* Side padding for the whole page */
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+main, section {
+    padding: 20px 5%;
 }
 
 /* --- Typography Highlights --- */
