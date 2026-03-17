@@ -6,7 +6,7 @@
     <title>Restaurant Menu</title>
     
     <link rel="icon" type="logo.jpg" sizes="32x32" href="/assets/images/logo.png">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    
 <link rel="stylesheet" href="/assets/css/header-footer.css">
 <link rel="stylesheet" href="/trial.css">
 <link rel="icon" type="logo.jpg" sizes="32x32" href="/assets/images/logo.png">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/trial.css">
 <link rel="stylesheet" href="/assets/css/images.css">
+<script src="/assets/js/responsive.js"></script>
 </head>
 <body>
   <header class="navbar">
@@ -38,77 +39,225 @@
         </div>
     </header>
     <main>
-        <div class="container">
-        <section id="menu">
-            <h1>Menu</h1>
-            <br><br>
-            <ul>
-                <h2>Food</h2>
-                <br><br>
-                <li>
-                    <h4>Hamburger</h4>
-                    <p>Price:800 FCFA</p>
-                    <img src="/assets/images/burger.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                <li>
-                    <h4>KFC</h4>
-                    <p>Price:10000 FCFA</p>
-                    <img src="/assets/images/kfc.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                 <li>
-                    <h4>Sandwitch</h4>
-                    <p>Price: 1000FCFA</p>
-                    <img src="/assets/images/sandwitch.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                <li>
-                    <h4>Pizza</h4>
-                    <p>Price:2500 FCFA</p>
-                    <img src="/assets/images/pizza.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                <li>
-                    <h4>Fried rice</h4>
-                    <p>Price:1500 FCFA</p>
-                    <img src="/assets/images/rice.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                <li>
-                    <h4>Popcorn</h4>
-                    <p>Price:1000 FCFA</p>
-                    <img src="/assets/images/burger.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                <h3>Beverages</h3>
-                <br><br>
-                <li>
-                    <h4>Soda</h4>
-                    <p>Price:1500 FCFA</p>
-                    <img src="/assets/images/burger.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                <li>
-                    <h4>El vino</h4>
-                    <p>Price:1500 FCFA</p>
-                    <img src="/assets/images/burger.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                 <li>
-                    <h4>Water</h4>
-                    <p>Price:1000 FCFA</p>
-                    <img src="/assets/images/burger.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-                 <li>
-                    <h4>Malt</h4>
-                    <p>Price: FCFA</p>
-                    <img src="/assets/images/burger.jpg" alt="Hamburger" class="Food-image">
-                    <button>Order</button>
-                </li><br><br>
-            </ul>
+    <section class="popular-dishes">
+            <div class="section-header">
+                <h2>Our Popular <span class="highlight">Dishes</span></h2>
+                
+            </div>
+
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/friedrice.jpg" alt="Hamburger">
+                    <h3>HAMBURGER</h3>
+                    <p class="price">800FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/fufu.jpg" alt="kfc">
+                    <h3>KFC</h3>
+                    <p class="price">10000FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/eru.jpg" alt="Pasta">
+                    <h3>SANDWITCH</h3>
+                    <p class="price">1000frs</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/plantain.jpg" alt="pizza">
+                    <h3>PIZZA</h3>
+                    <p class="price">2500FRS</p>
+                </div>
+            </div>
         </section>
+        <br><br>
+        <section class="popular-dishes">
+            <div class="section-header">
+                <h2>Our Popular <span class="highlight">Dishes</span></h2>
+                
+            </div>
+
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/burger.jpg" alt="Hamburger">
+                    <h3>HAMBURGER</h3>
+                    <p class="price">800FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/kfc.jpg" alt="kfc">
+                    <h3>KFC</h3>
+                    <p class="price">10000FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/sandwitch.jpg" alt="Pasta">
+                    <h3>SANDWITCH</h3>
+                    <p class="price">1000frs</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/pizza.jpg" alt="pizza">
+                    <h3>PIZZA</h3>
+                    <p class="price">2500FRS</p>
+                </div>
+            </div>
+        </section>
+        <section class="popular-dishes">
+            <div class="section-header">
+                <h2>Our Popular <span class="highlight">Dishes</span></h2>
+                
+            </div>
+
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/plantain.jpg" alt="Hamburger">
+                    <h3>HAMBURGER</h3>
+                    <p class="price">800FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/fufu.jpg" alt="kfc">
+                    <h3>KFC</h3>
+                    <p class="price">10000FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/friedrice.jpg" alt="Pasta">
+                    <h3>SANDWITCH</h3>
+                    <p class="price">1000frs</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/eru.jpg" alt="pizza">
+                    <h3>PIZZA</h3>
+                    <p class="price">2500FRS</p>
+                </div>
+            </div>
+        </section>
+ <section class="popular-dishes">
+            <div class="section-header">
+                <h2>Our Popular <span class="highlight">Dishes</span></h2>
+                
+            </div>
+
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/burger.jpg" alt="Hamburger">
+                    <h3>HAMBURGER</h3>
+                    <p class="price">800FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/kfc.jpg" alt="kfc">
+                    <h3>KFC</h3>
+                    <p class="price">10000FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/sandwitch.jpg" alt="Pasta">
+                    <h3>SANDWITCH</h3>
+                    <p class="price">1000frs</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/pizza.jpg" alt="pizza">
+                    <h3>PIZZA</h3>
+                    <p class="price">2500FRS</p>
+                </div>
+            </div>
+        </section>
+ <section class="popular-dishes">
+            <div class="section-header">
+                <h2>Our Popular <span class="highlight">Dishes</span></h2>
+                
+            </div>
+
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/pizza.jpg" alt="Hamburger">
+                    <h3>HAMBURGER</h3>
+                    <p class="price">800FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/pizza2.jpg" alt="kfc">
+                    <h3>KFC</h3>
+                    <p class="price">10000FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/pizza3.jpg" alt="Pasta">
+                    <h3>SANDWITCH</h3>
+                    <p class="price">1000frs</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/pizza4.jpg" alt="pizza">
+                    <h3>PIZZA</h3>
+                    <p class="price">2500FRS</p>
+                </div>
+            </div>
+        </section>
+ <section class="popular-dishes">
+            <div class="section-header">
+                <h2>Our Popular <span class="highlight">Dishes</span></h2>
+                
+            </div>
+
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/burger.jpg" alt="Hamburger">
+                    <h3>HAMBURGER</h3>
+                    <p class="price">800FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/kfc.jpg" alt="kfc">
+                    <h3>KFC</h3>
+                    <p class="price">10000FRS</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/sandwitch.jpg" alt="Pasta">
+                    <h3>SANDWITCH</h3>
+                    <p class="price">1000frs</p>
+                </div>
+
+                <div class="dish-card">
+                    <span class="rating">(5.6k) <i class="fa-solid fa-star"></i></span>
+                    <img src="/assets/images/pizza.jpg" alt="pizza">
+                    <h3>PIZZA</h3>
+                    <p class="price">2500FRS</p>
+                </div>
+            </div>
+        </section>
+ 
+ 
     </main>
     </div>
   <footer class="site-footer">
