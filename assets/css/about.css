@@ -42,7 +42,7 @@ a {
 body {
     background-color: var(--bg-color);
     color: var(--text-dark);
-    padding: 20px 5%; /* Side padding for the whole page */
+    padding: 40px 8%; /* Increased padding for the whole page */
 }
 
 
